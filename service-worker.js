@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = 'klima-anfrage-v2';
+﻿const CACHE_NAME = 'klima-anfrage-v3';
 const APP_SHELL = [
   './',
   './index.html',
@@ -30,5 +30,6 @@ self.addEventListener('fetch', (event) => {
     }).catch(() => caches.match('./index.html')))
   );
 });
+
 
 

@@ -4,7 +4,7 @@
   "short_name": "Klima Anfrage",
   "lang": "de-DE",
   "dir": "ltr",
-  "description": "Kundenanfrage fuer Klimaanlagen mit Raum- und Montagedaten.",
+  "description": "Kundenanfrage für Klimaanlagen mit Raum- und Montagedaten.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -35,4 +35,5 @@
     }
   ]
 }
+
 

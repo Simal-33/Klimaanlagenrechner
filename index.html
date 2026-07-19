@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#176b87">
-  <meta name="description" content="Kundenanfrage fuer Klimaanlagen mit Raumlast und Projektangaben.">
+  <meta name="description" content="Kundenanfrage für Klimaanlagen mit Raumlast und Projektangaben.">
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="icon" href="./icon-192.png">
   <link rel="apple-touch-icon" href="./icon-192.png">
@@ -90,7 +90,7 @@
           <img src="./logo.png" alt="">
           <div>
             <strong>Klimaanlagen-Anfrage</strong>
-            <span>Kundenformular fuer Beratung und Planung</span>
+            <span>Kundenformular für Beratung und Planung</span>
           </div>
         </div>
         <button id="installBtn" class="button hidden" type="button">App installieren</button>
@@ -100,13 +100,13 @@
     <main>
       <section aria-label="Anfrageformular">
         <h1>Klimaanlage planen</h1>
-        <p>Erfassen Sie die wichtigsten Daten zum Objekt, zu den Raeumen und zur Montage. Wir melden uns mit einer persoenlichen Beratung.</p>
+        <p>Erfassen Sie die wichtigsten Daten zum Objekt, zu den Räumen und zur Montage. Wir melden uns mit einer persönlichen Beratung.</p>
 
         <div class="section-title"><h2>Kunde</h2></div>
         <div class="grid">
           <label>Name<input id="customerName" autocomplete="name" placeholder="z. B. Max Mustermann"></label>
           <label>Telefon oder E-Mail<input id="customerContact" autocomplete="email" placeholder="z. B. +43 ... oder name@mail.at"></label>
-          <label>Strasse / Hausnummer<input id="customerStreet" autocomplete="street-address" placeholder="z. B. Musterstrasse 12"></label>
+          <label>Straße / Hausnummer<input id="customerStreet" autocomplete="street-address" placeholder="z. B. Musterstraße 12"></label>
           <label>PLZ<input id="customerZip" inputmode="numeric" autocomplete="postal-code" placeholder="z. B. 1010"></label>
           <label class="full">Ort<input id="customerCity" autocomplete="address-level2" placeholder="z. B. Wien"></label>
         </div>
@@ -117,8 +117,8 @@
             <select id="objectType">
               <option>Wohnung</option>
               <option>Haus</option>
-              <option>Buero / Praxis</option>
-              <option>Ladenflaeche</option>
+              <option>Büro / Praxis</option>
+              <option>Ladenfläche</option>
             </select>
           </label>
           <label>Anlagentyp
@@ -126,7 +126,7 @@
               <option value="single">Single-Split</option>
               <option value="multi" disabled>Multi-Split</option>
             </select>
-            <span id="systemHint" class="hint">Multi-Split ist ab 2 Raeumen auswaehlbar.</span>
+            <span id="systemHint" class="hint">Multi-Split ist ab 2 Räumen auswählbar.</span>
           </label>
           <label>Berechnung
             <select id="calcMode">
@@ -134,20 +134,20 @@
               <option value="genau">Genauer</option>
             </select>
           </label>
-          <label>Gebaeudezustand
+          <label>Gebäudezustand
             <select id="buildingState">
               <option value="neubau">Neubau / sehr gut</option>
               <option value="saniert" selected>Saniert / normal</option>
               <option value="unsaniert">Altbau / unsaniert</option>
             </select>
           </label>
-          <label class="full"><span>Raeume <output id="roomCountOut">1</output></span><input id="roomCount" type="range" min="1" max="6" value="1"></label>
+          <label class="full"><span>Räume <output id="roomCountOut">1</output></span><input id="roomCount" type="range" min="1" max="6" value="1"></label>
         </div>
         <div id="rooms" class="room-list"></div>
 
         <div class="section-title"><h2>Montage</h2></div>
         <div class="grid">
-          <label>Wo steht das Aussengeraet?
+          <label>Wo steht das Außengerät?
             <select id="outdoorLocation">
               <option>Balkon / Terrasse</option>
               <option>Hauswand</option>
@@ -158,26 +158,26 @@
           <label>Wanddurchbruch
             <select id="drilling">
               <option>Ja, 1 Durchbruch</option>
-              <option>Nicht noetig</option>
-              <option>Mehrere Durchbrueche</option>
+              <option>Nicht nötig</option>
+              <option>Mehrere Durchbrüche</option>
             </select>
           </label>
-          <label><span>Rohrlaenge gesamt <output id="pipeOut">5 m</output></span><input id="pipeLength" type="range" min="1" max="60" value="5"></label>
+          <label><span>Rohrlänge gesamt <output id="pipeOut">5 m</output></span><input id="pipeLength" type="range" min="1" max="60" value="5"></label>
           <label><span>Sichtbarer Kabelkanal <output id="channelOut">4 m</output></span><input id="channelLength" type="range" min="0" max="35" value="4"></label>
           <label>Stromanschluss
             <select id="powerConnection">
-              <option>Steckdose / Anschluss in der Naehe</option>
+              <option>Steckdose / Anschluss in der Nähe</option>
               <option>Zuleitung bis 10 m</option>
-              <option>Zuleitung ueber 10 m</option>
+              <option>Zuleitung über 10 m</option>
             </select>
           </label>
           <label>Kondensat
             <select id="condensate">
-              <option>Freier Ablauf moeglich</option>
-              <option>Pumpe vermutlich noetig</option>
+              <option>Freier Ablauf möglich</option>
+              <option>Pumpe vermutlich nötig</option>
             </select>
           </label>
-          <label class="full">Was ist noch wichtig?<textarea id="notes" placeholder="z. B. Altgeraet abbauen, Denkmalschutz, sehr leise Anlage, schnelle Montage"></textarea></label>
+          <label class="full">Was ist noch wichtig?<textarea id="notes" placeholder="z. B. Altgerät abbauen, Denkmalschutz, sehr leise Anlage, schnelle Montage"></textarea></label>
         </div>
       </section>
 
@@ -185,17 +185,17 @@
         <h2>Zusammenfassung</h2>
         <div class="summary">
           <div class="stat"><span>Empfohlene Anlagenleistung</span><strong id="recommendedKw">3,5 kW</strong></div>
-          <div class="stat"><span>Gesamte Kuehllast</span><strong id="totalLoad">0 kW</strong></div>
+          <div class="stat"><span>Gesamte Kühllast</span><strong id="totalLoad">0 kW</strong></div>
           <div class="stat"><span>Anlagentyp</span><strong id="systemSummary">Single-Split</strong></div>
         </div>
-        <h3>Kuehlleistung je Raum</h3>
+        <h3>Kühlleistung je Raum</h3>
         <div id="roomLoads" class="result-lines"></div>
         <div class="actions">
           <button id="sendMail" class="primary" type="button">Anfrage per E-Mail senden</button>
           <button id="copyText" type="button">Anfrage kopieren</button>
           <button id="resetForm" type="button">Neu starten</button>
         </div>
-        <div id="status" class="status">Bereit fuer die Kundenanfrage.</div>
+        <div id="status" class="status">Bereit für die Kundenanfrage.</div>
       </aside>
     </main>
   </div>
@@ -217,8 +217,8 @@
       const shadeFactor = { none: 1, inside: 0.85, outside: 0.55, shutter: 0.4 };
       const buildingBase = { neubau: 42, saniert: 55, unsaniert: 72 };
       const labels = {
-        sun: { nord: 'Nord / wenig Sonne', ost: 'Ost', sued: 'Sued', west: 'West', suedwest: 'Sued-West', stark: 'Sehr sonnig / grosse Glasflaeche' },
-        shade: { none: 'Keine', inside: 'Innenliegend / Vorhang', outside: 'Aussenjalousie / Markise', shutter: 'Rollladen / starke Verschattung' }
+        sun: { nord: 'Nord / wenig Sonne', ost: 'Ost', sued: 'Süd', west: 'West', suedwest: 'Süd-West', stark: 'Sehr sonnig / große Glasfläche' },
+        shade: { none: 'Keine', inside: 'Innenliegend / Vorhang', outside: 'Außenjalousie / Markise', shutter: 'Rollladen / starke Verschattung' }
       };
 
       function roomCount() { return Number($('roomCount').value); }
@@ -241,7 +241,7 @@
         const allowed = roomCount() >= 2;
         multi.disabled = !allowed;
         if (!allowed && $('systemType').value === 'multi') $('systemType').value = 'single';
-        $('systemHint').textContent = allowed ? 'Multi-Split ist bei mehreren Raeumen auswaehlbar.' : 'Multi-Split ist ab 2 Raeumen auswaehlbar.';
+        $('systemHint').textContent = allowed ? 'Multi-Split ist bei mehreren Räumen auswählbar.' : 'Multi-Split ist ab 2 Räumen auswählbar.';
       }
       function renderRooms() {
         const count = roomCount();
@@ -251,9 +251,9 @@
             <div class="room-head"><strong>${room.name || `Raum ${index + 1}`}</strong><span class="hint">Raum ${index + 1}</span></div>
             <div class="grid">
               <label>Raumbezeichnung<input data-room="${index}" data-key="name" value="${room.name}" placeholder="z. B. Wohnzimmer"></label>
-              <label><span>Flaeche <output>${room.area} m2</output></span><input data-room="${index}" data-key="area" type="range" min="8" max="80" value="${room.area}"></label>
-              <label class="advanced"><span>Raumhoehe <output>${room.height.toLocaleString('de-DE')} m</output></span><input data-room="${index}" data-key="height" type="range" min="2.1" max="4.2" step="0.1" value="${room.height}"></label>
-              <label><span>Fensterflaeche <output>${room.windows} m2</output></span><input data-room="${index}" data-key="windows" type="range" min="0" max="30" step="0.5" value="${room.windows}"></label>
+              <label><span>Fläche <output>${room.area} m2</output></span><input data-room="${index}" data-key="area" type="range" min="8" max="80" value="${room.area}"></label>
+              <label class="advanced"><span>Raumhöhe <output>${room.height.toLocaleString('de-DE')} m</output></span><input data-room="${index}" data-key="height" type="range" min="2.1" max="4.2" step="0.1" value="${room.height}"></label>
+              <label><span>Fensterfläche <output>${room.windows} m2</output></span><input data-room="${index}" data-key="windows" type="range" min="0" max="30" step="0.5" value="${room.windows}"></label>
               <label>Fensterrichtung<select data-room="${index}" data-key="sun">${Object.entries(labels.sun).map(([value, label]) => `<option value="${value}" ${room.sun === value ? 'selected' : ''}>${label}</option>`).join('')}</select></label>
               <label>Verschattung<select data-room="${index}" data-key="shade">${Object.entries(labels.shade).map(([value, label]) => `<option value="${value}" ${room.shade === value ? 'selected' : ''}>${label}</option>`).join('')}</select></label>
               <label><span>Personen <output>${room.persons}</output></span><input data-room="${index}" data-key="persons" type="range" min="0" max="8" value="${room.persons}"></label>
@@ -310,16 +310,16 @@
           `Objekt: ${$('objectType').value}`,
           `Anlagentyp: ${$('systemSummary').textContent}`,
           `Berechnung: ${$('calcMode').options[$('calcMode').selectedIndex].text}`,
-          `Gebaeudezustand: ${$('buildingState').options[$('buildingState').selectedIndex].text}`,
-          `Raeume: ${roomCount()}`,
+          `Gebäudezustand: ${$('buildingState').options[$('buildingState').selectedIndex].text}`,
+          `Räume: ${roomCount()}`,
           `Gesamtlast: ${result.total.toLocaleString('de-DE', { maximumFractionDigits: 1 })} kW`,
           `Empfohlene Anlagenleistung: ${result.recommended.toLocaleString('de-DE', { maximumFractionDigits: 1 })} kW`,
           '', 'Raumdaten:',
           ...rooms.map((room, index) => `${room.name || `Raum ${index + 1}`}: ${room.area} m2, Fenster ${room.windows} m2, ${labels.sun[room.sun]}, ${labels.shade[room.shade]}, ${room.persons} Personen, Dachgeschoss ${room.attic === 'yes' ? 'ja' : 'nein'}`),
           '', 'Montage:',
-          `Aussengeraet: ${$('outdoorLocation').value}`,
+          `Außengerät: ${$('outdoorLocation').value}`,
           `Wanddurchbruch: ${$('drilling').value}`,
-          `Rohrlaenge: ${$('pipeLength').value} m`,
+          `Rohrlänge: ${$('pipeLength').value} m`,
           `Kabelkanal: ${$('channelLength').value} m`,
           `Stromanschluss: ${$('powerConnection').value}`,
           `Kondensat: ${$('condensate').value}`,
@@ -351,7 +351,7 @@
         $('condensate').selectedIndex = 0;
         renderRooms();
         calculate();
-        $('status').textContent = 'Formular wurde zurueckgesetzt.';
+        $('status').textContent = 'Formular wurde zurückgesetzt.';
       }
       ['roomCount', 'systemType', 'calcMode', 'buildingState', 'pipeLength', 'channelLength', 'objectType', 'outdoorLocation', 'drilling', 'powerConnection', 'condensate'].forEach((id) => {
         $(id).addEventListener('input', () => { renderRooms(); calculate(); });
@@ -380,5 +380,7 @@
   </script>
 </body>
 </html>
+
+
 
 
