@@ -1,10 +1,10 @@
-{
+﻿{
   "id": "./index.html",
-  "name": "Klimaanlagen Rechner",
-  "short_name": "Klima Rechner",
+  "name": "Klimaanlagen Anfrage",
+  "short_name": "Klima Anfrage",
   "lang": "de-DE",
   "dir": "ltr",
-  "description": "Richtpreis- und Anfrage-Rechner f\u00fcr Klimaanlagen.",
+  "description": "Kundenanfrage fuer Klimaanlagen mit Raum- und Montagedaten.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

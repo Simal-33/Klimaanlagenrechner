@@ -1,8 +1,7 @@
-const CACHE_NAME = 'klima-rechner-v40-flat';
+﻿const CACHE_NAME = 'klima-anfrage-v1';
 const APP_SHELL = [
   './',
   './index.html',
-  './prices.json',
   './manifest.webmanifest',
   './logo.png',
   './icon-192.png',
@@ -23,16 +22,6 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
-  if (new URL(event.request.url).pathname.endsWith('/prices.json')) {
-    event.respondWith(
-      fetch(event.request).then((response) => {
-        const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
-        return response;
-      }).catch(() => caches.match(event.request))
-    );
-    return;
-  }
   event.respondWith(
     caches.match(event.request).then((cached) => cached || fetch(event.request).then((response) => {
       const copy = response.clone();
@@ -41,3 +30,4 @@ self.addEventListener('fetch', (event) => {
     }).catch(() => caches.match('./index.html')))
   );
 });
+
