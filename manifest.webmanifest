@@ -1,6 +1,6 @@
 ﻿{
   "id": "./index.html",
-  "name": "Klimaanlagen Anfrage",
+  "name": "Klimaanlagen-Anfrage",
   "short_name": "Klima Anfrage",
   "lang": "de-DE",
   "dir": "ltr",
@@ -35,3 +35,4 @@
     }
   ]
 }
+
