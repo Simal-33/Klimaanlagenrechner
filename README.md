@@ -28,7 +28,6 @@ Alle wichtigen Dateien liegen direkt im Hauptordner. Es muessen keine Unterordne
 - Rohrlaenge bis maximal 60 m
 - Datenbank-Button fuer Preise und Einstellwerte
 - Passwortgeschuetzte Preisliste: Geraetepakete und Zusatzarbeiten hinzufuegen oder loeschen
-- Standard-Passwort: `KLIMA2026`
 
 ## Wichtig
 
